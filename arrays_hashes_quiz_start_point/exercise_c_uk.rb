@@ -26,9 +26,14 @@ united_kingdom<<[:name => "Northern Ireland",:capital => "Belfast", :population 
 
 # 3. Use a loop to print the names of all the countries in the UK.
 
-
+united_kingdom.each do |country|
+  puts "#{country[:name]} "
+end
 
 # 4. Use a loop to find the total population of the UK.
 
-
+total = 0
+for coutry in united_kingdom do
+  total += country[:population]
+end
 
